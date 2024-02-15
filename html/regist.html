@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../css/regist.css">
+</head>
+
+<body>
+    <script language=JavaScript>
+        <!--
+        var enabled = 0; today = new Date();
+        var day; var date;
+        if(today.getDay()==0) day = " 星期日"
+        if(today.getDay()==1) day = " 星期一"
+        if(today.getDay()==2) day = " 星期二"
+        if(today.getDay()==3) day = " 星期三"
+        if(today.getDay()==4) day = " 星期四"
+        if(today.getDay()==5) day = " 星期五"
+        if(today.getDay()==6) day = " 星期六"
+        document.fgColor = "000000";
+        date = "今天是:" + (today.getFullYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日" + day +"";
+        document.write(date);
+        // -->
+        </script>
+    <div class="logreg">
+        <!-- 记录 -->
+        <form  autocomplete="off" class="info">
+            <input type="text" class="" name="uname" placeholder="设置用户名">          
+            <span class="usrtext"></span>
+            <input type="text" class="" name="phone" placeholder="输入手机号">
+            <span class="phonetext"></span>
+            <input type="text" class="" name="code" placeholder="短信验证码">
+            <span class="codetext"></span>
+            <a href="javascript:" class="code">发送验证码</a>
+            <input type="text" class="" name="password" placeholder="设置6至20位字母、数字和符号组合">
+            <span class="pwdtext"></span>
+            <input type="password" class="" name="confirm" placeholder="请再次输入上面的密码">
+            <span class="pwdtext2"></span>
+            <div class="sure">
+                <input type="checkbox" class="ui-checkbox">已阅读并同意<i>《用户协议》</i>
+            </div>
+            <button class="next">提交</button>
+        </form>
+    </div>
+<script src="../js/regist.js"></script>
+</body>
+
+</html>

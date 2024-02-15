@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入页面</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=智慧颐年>
+    <meta name="keywords" content=智慧颐年>
+    <title>登录界面</title>
+    <link rel="shortcut icon" href="../images-index/logo.ico" type="images-index">
+</head>
+
+<body>
+    <script language=JavaScript>
+        <!--
+        var enabled = 0; today = new Date();
+        var day; var date;
+        if(today.getDay()==0) day = " 星期日"
+        if(today.getDay()==1) day = " 星期一"
+        if(today.getDay()==2) day = " 星期二"
+        if(today.getDay()==3) day = " 星期三"
+        if(today.getDay()==4) day = " 星期四"
+        if(today.getDay()==5) day = " 星期五"
+        if(today.getDay()==6) day = " 星期六"
+        document.fgColor = "000000";
+        date = "今天是:" + (today.getFullYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日" + day +"";
+        document.write(date);
+        // -->
+        </script>
+        <span></span>
+    <div class="box">
+        <form action="" autocomplete="off">
+            <div class="login">
+                <div class="tab-nav">
+                    <a href="javascript:" class="active" data-id="0">账户登入</a>
+                    <a href="javascript:" data-id="1">扫码登入</a>
+                    <!-- 点击条 -->
+                    <!-- <div class="active"></div> -->
+                </div>
+                <div class="nav-conter">
+                    <!-- 账户登入-->
+                    <div class="tab-pane">
+                        <!-- 表单非空 -->
+                        <!-- <input required type="text" placeholder="账户" name="uname">
+                        <input required type="password" placeholder="密码" name="password"> -->
+                        <div class="input-group">
+                            <input required="" type="text" name="text" autocomplete="off" class="input" name="uname">
+                            <label class="user-label">账号</label>
+                        </div>
+                        <div class="input-group">
+                            <input required="" type="password" name="text" autocomplete="off" class="input" name="password">
+                            <label class="user-label">密码</label>
+                        </div>
+                        <div class="ures">
+                            <input type="checkbox" name="agree">请勾选用户协议
+                        </div>
+                        <div class="reglogin">
+                            <button name="login">登入</button>
+                            <button name="regist">注册</button>
+                        </div>
+                        <span><a href="">忘记密码</a></span>
+                    </div>
+                    <!-- 二维码 -->
+                    <div class="tab-pane" style="display: none;">
+                        <img src="../img/二维码.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
